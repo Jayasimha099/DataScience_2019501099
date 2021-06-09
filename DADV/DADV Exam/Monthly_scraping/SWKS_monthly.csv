@@ -1,0 +1,135 @@
+,<!DOCTYPE html>
+0,"<html lang=""en-us"">"
+1,  <head>
+2,"    <meta http-equiv=""content-type"" content=""text/html; charset=UTF-8"">"
+3,"    <meta charset=""utf-8"">"
+4,    <title>Yahoo</title>
+5,"    <meta name=""viewport"" content=""width=device-width,initial-scale=1,minimal-ui"">"
+6,"    <meta http-equiv=""X-UA-Compatible"" content=""IE=edge,chrome=1"">"
+7,    <style>
+8,      html {
+9,          height: 100%;
+10,      }
+11,      body {
+12,          background: #fafafc url(https://s.yimg.com/nn/img/sad-panda-201402200631.png) 50% 50%;
+13,          background-size: cover;
+14,          height: 100%;
+15,          text-align: center;
+16,"          font: 300 18px ""helvetica neue"", helvetica, verdana, tahoma, arial, sans-serif;"
+17,          margin: 0;
+18,      }
+19,      table {
+20,          height: 100%;
+21,          width: 100%;
+22,          table-layout: fixed;
+23,          border-collapse: collapse;
+24,          border-spacing: 0;
+25,          border: none;
+26,      }
+27,      h1 {
+28,          font-size: 42px;
+29,          font-weight: 400;
+30,          color: #400090;
+31,      }
+32,      p {
+33,          color: #1A1A1A;
+34,      }
+35,      #message-1 {
+36,          font-weight: bold;
+37,          margin: 0;
+38,      }
+39,      #message-2 {
+40,          display: inline-block;
+41,          *display: inline;
+42,          zoom: 1;
+43,          max-width: 17em;
+44,          _width: 17em;
+45,      }
+46,      </style>
+47,      <script>
+48,      </script>
+49,  </head>
+50,  <body>
+51,  <!-- status code : 502 -->
+52,  <!-- Server Connection Closed -->
+53,  <!-- host machine: media-router-ui7015.prod.media.sg3.yahoo.com -->
+54,  <!-- timestamp: 1622903643.974 -->
+55,  <!-- url: https://finance.yahoo.com/quote/SWKS/history?period1=1451692800&period2=1609545600&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true-->
+56,"  <script type=""text/javascript"">"
+57,"    function buildUrl(url, parameters){"
+58,      var qs = [];
+59,      for(var key in parameters) {
+60,        var value = parameters[key];
+61,"        qs.push(encodeURIComponent(key) + ""="" + encodeURIComponent(value));"
+62,      }
+63,"      url = url + ""?"" + qs.join('&');"
+64,      return url;
+65,    }
+66,    function generateBRBMarkup(site) {
+67,      params.source = 'brb';
+68,      generateBeaconMarkup(params);
+69,      var englishHeader = 'Will be right back...';
+70,      var englishMessage1 = 'Thank you for your patience.';
+71,      var englishMessage2 = 'Our engineers are working quickly to resolve the issue.';
+72,      var defaultLogoStyle = '';
+73,      var siteDataMap = {
+74,        'default': {
+75,"          logo: 'https://s.yimg.com/rz/p/yahoo_frontpage_en-US_s_f_p_205x58_frontpage.png',"
+76,"          logoAlt: 'Yahoo Logo',"
+77,"          logoStyle: defaultLogoStyle,"
+78,"          header: englishHeader,"
+79,"          message1: englishMessage1,"
+80,          message2: englishMessage2
+81,        }
+82,      };
+83,      var siteDetails = siteDataMap['default'];
+84,      document.write('<table><tbody><tr><td>');
+85,"      document.write('<div id=""content"">');"
+86,"      document.write('<img src=""' + siteDetails['logo'] + '"" alt=""' + siteDetails['logoAlt'] + '"" style=""' + siteDetails['logoStyle'] + '"">');"
+87,"      document.write('<h1 style=""margin-top:20px;"">' + siteDetails['header'] + '</h1>');"
+88,"      document.write('<p id=""message-1"">' + siteDetails['message1'] + '</p>');"
+89,"      document.write('<p id=""message-2"">' + siteDetails['message2'] + '</p>');"
+90,      document.write('</div>');
+91,      document.write('</td></tr></tbody></table>');
+92,    }
+93,    function generateBeaconMarkup(params) {
+94,"        document.write('<img src=""' + buildUrl('//geo.yahoo.com/b', params) + '"" style=""display:none;"" width=""0px"" height=""0px""/>');"
+95,        var beacon = new Image();
+96,"        beacon.src = buildUrl('//bcn.fp.yahoo.com/p', params);"
+97,    }
+98,    var hostname = window.location.hostname;
+99,    var device = 'desktop';
+100,    var ynet = ('-' === '1');
+101,    var time = new Date().getTime();
+102,    var params = {
+103,"        s: '1197757129',"
+104,"        t: time,"
+105,"        err_url: document.URL,"
+106,"        err: '502',"
+107,"        test: '-',"
+108,"        ats_host: 'media-router-ui7015.prod.media.sg3.yahoo.com',"
+109,"        rid: '68jgqclgbn2qr',"
+110,        message: 'Server Connection Closed'
+111,    };
+112,    if(ynet) {
+113,"        document.write('<div style=""height: 5px; background-color: red;""></div>');"
+114,    }
+115,"    generateBRBMarkup(hostname, params);"
+116,  </script>
+117,  <noscript>
+118,  <table>
+119,    <tbody>
+120,      <tr>
+121,        <td>
+122,"          <div id=""englishContent"">"
+123,"            <h1 style=""margin-top:20px;"">Will be right back...</h1>"
+124,"            <p id=""message-1"">Thank you for your patience.</p>"
+125,"            <p id=""message-2"">Our engineers are working quickly to resolve the issue.</p>"
+126,          </div>
+127,        </td>
+128,      </tr>
+129,    </tbody>
+130,  </table>
+131,  </noscript>
+132,  </body>
+133,</html>
